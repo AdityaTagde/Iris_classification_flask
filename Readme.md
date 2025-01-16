@@ -37,5 +37,6 @@ To run this application locally, you'll need:
 ## 📸 Screenshots
 
 ![image alt](https://github.com/AdityaTagde/Iris_classification_flask/blob/main/Input.png)
-![image alt](https://github.com/AdityaTagde/Iris_classification_flask/blob/main/deploys.py)
+
+![image alt](https://github.com/AdityaTagde/Iris_classification_flask/blob/main/prediction.png)
 
