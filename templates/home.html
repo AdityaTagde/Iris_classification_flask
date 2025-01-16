@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Iris Flower Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #4CAF50;
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+
+        .forms {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .formGroup {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: left;
+            display: block;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1.1em;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .footer {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Iris Flower Prediction</h1>
+
+    <div class="forms">
+        <form method="POST" action="/predict">
+            <label for="SepalLength" class="formGroup">Sepal Length (cm):</label>
+            <input name="SepalLength" type="text" placeholder="Enter Sepal Length">
+
+            <label for="SepalWidth" class="formGroup">Sepal Width (cm):</label>
+            <input name="SepalWidth" type="text" placeholder="Enter Sepal Width">
+
+            <label for="PetalLength" class="formGroup">Petal Length (cm):</label>
+            <input name="PetalLength" type="text" placeholder="Enter Petal Length">
+
+            <label for="PetalWidth" class="formGroup">Petal Width (cm):</label>
+            <input name="PetalWidth" type="text" placeholder="Enter Petal Width">
+
+            <hr>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Powered by Flask & Scikit-Learn</p>
+    </div>
+
+</body>
+
+</html>
