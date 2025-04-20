@@ -22,18 +22,6 @@ To run this application locally, you'll need:
 - Scikit-learn (optional for machine learning)
 - Matplotlib/Seaborn (optional for data visualization)
 
-
-## 🖥️ Usage
-1.Open your browser and visit http://127.0.0.1:5000/.
-2.Enter the flower's attributes:
-- Sepal Length
-- Sepal Width
-- Petal Length
-- Petal Width
-3.Click the Predict button to get the species prediction.
-4.The species (Setosa, Versicolor, or Virginica) will be displayed.
-
-
 ## 📸 Screenshots
 
 ![image alt](https://github.com/AdityaTagde/Iris_classification_flask/blob/main/Input.png)
